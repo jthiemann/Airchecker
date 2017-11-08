@@ -18,10 +18,10 @@ public class polData {
     private float ozon_value;
 
     //TODO: Replace filler variables
-    private float allergy_1;
-    private float allergy_2;
-    private float allergy_3;
-    private float allergy_4;
+    private float graeser_value;
+    private float esche_value;
+    private float buche_value;
+    private float birke_value;
     private float allergy_5;
     private float allergy_6;
     private float allergy_7;
@@ -47,10 +47,10 @@ public class polData {
     public float getOzon() { return ozon_value; }
 
     //TODO: Replace filler variables
-    public float getAllergy_1() { return allergy_1; }
-    public float getAllergy_2() { return allergy_2; }
-    public float getAllergy_3() { return allergy_3; }
-    public float getAllergy_4() { return allergy_4; }
+    public float getGraeser() { return graeser_value; }
+    public float getEsche() { return esche_value; }
+    public float getBuche() { return buche_value; }
+    public float getBirke() { return birke_value; }
     public float getAllergy_5() { return allergy_5; }
     public float getAllergy_6() { return allergy_6; }
     public float getAllergy_7() { return allergy_7; }
@@ -81,10 +81,10 @@ public class polData {
         ozon_value = r.nextFloat() * 10;
 
         //TODO: Replace filler variables
-        allergy_1 = r.nextFloat() * 10;
-        allergy_2 = r.nextFloat() * 10;
-        allergy_3 = r.nextFloat() * 10;
-        allergy_4 = r.nextFloat() * 10;
+        graeser_value = r.nextFloat() * 10;
+        esche_value = r.nextFloat() * 10;
+        buche_value = r.nextFloat() * 10;
+        birke_value = r.nextFloat() * 10;
         allergy_5 = r.nextFloat() * 10;
         allergy_6 = r.nextFloat() * 10;
         allergy_7 = r.nextFloat() * 10;

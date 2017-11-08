@@ -9,7 +9,7 @@
     <ScrollView
         android:layout_width="fill_parent"
         android:layout_height="fill_parent"
-        android:background="@color/background">
+        android:background="@drawable/airchecker_bg">
 
         <android.support.constraint.ConstraintLayout
             android:layout_width="fill_parent"
@@ -22,8 +22,9 @@
                 android:layout_alignParentStart="true"
                 android:layout_alignParentTop="true"
                 android:layout_marginStart="8dp"
-                android:layout_marginTop="2dp"
+                android:layout_marginTop="3dp"
                 android:text="@string/last_refresh"
+                android:textColor="#FFFFFF"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
 
@@ -34,7 +35,8 @@
                 android:layout_alignParentStart="true"
                 android:layout_alignParentTop="true"
                 android:layout_marginStart="8dp"
-                android:layout_marginTop="2dp"
+                android:layout_marginTop="3dp"
+                android:textColor="#FFFFFF"
                 android:text="@string/last_refresh_timestamp"
                 app:layout_constraintStart_toEndOf="@+id/last_refresh"
                 app:layout_constraintTop_toTopOf="parent" />
@@ -46,6 +48,7 @@
                 android:layout_marginEnd="8dp"
                 android:layout_marginStart="8dp"
                 android:layout_marginTop="30dp"
+                android:alpha="0.85"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
@@ -274,10 +277,11 @@
             <ImageView
                 android:id="@+id/container_pollutants2"
                 android:layout_width="match_parent"
-                android:layout_height="470dp"
+                android:layout_height="350dp"
                 android:layout_marginEnd="8dp"
                 android:layout_marginStart="8dp"
                 android:layout_marginTop="30dp"
+                android:alpha="0.85"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@id/container_pollutants1"
                 app:srcCompat="@color/background_containers" />
@@ -306,16 +310,6 @@
                 app:layout_constraintTop_toBottomOf="@+id/pollutants2_headline" />
 
             <TextView
-                android:id="@+id/pollutants2_e1_name2"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="8dp"
-                android:textSize="15sp"
-                android:text="@string/pollutants2_e1_name2"
-                app:layout_constraintStart_toStartOf="@+id/container_pollutants2"
-                app:layout_constraintTop_toBottomOf="@+id/pollutants2_e1_name" />
-
-            <TextView
                 android:id="@+id/pollutants2_e1_val"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -336,7 +330,7 @@
                 android:background="#000000"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@id/pollutants2_e1_name2" />
+                app:layout_constraintTop_toBottomOf="@id/pollutants2_e1_name" />
 
             <TextView
                 android:id="@+id/pollutants2_e2_name"
@@ -348,16 +342,6 @@
                 android:text="@string/pollutants2_e2_name"
                 app:layout_constraintStart_toStartOf="@+id/container_pollutants2"
                 app:layout_constraintTop_toTopOf="@+id/divisor_5" />
-
-            <TextView
-                android:id="@+id/pollutants2_e2_name2"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="8dp"
-                android:textSize="15sp"
-                android:text="@string/pollutants2_e2_name2"
-                app:layout_constraintStart_toStartOf="@+id/container_pollutants2"
-                app:layout_constraintTop_toBottomOf="@+id/pollutants2_e2_name" />
 
             <TextView
                 android:id="@+id/pollutants2_e2_val"
@@ -380,7 +364,7 @@
                 android:background="#000000"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@id/pollutants2_e2_name2" />
+                app:layout_constraintTop_toBottomOf="@id/pollutants2_e2_name" />
 
             <TextView
                 android:id="@+id/pollutants2_e3_name"
@@ -392,16 +376,6 @@
                 android:text="@string/pollutants2_e3_name"
                 app:layout_constraintStart_toStartOf="@+id/container_pollutants2"
                 app:layout_constraintTop_toBottomOf="@+id/divisor_6" />
-
-            <TextView
-                android:id="@+id/pollutants2_e3_name2"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="8dp"
-                android:textSize="15sp"
-                android:text="@string/pollutants2_e3_name2"
-                app:layout_constraintStart_toStartOf="@+id/container_pollutants2"
-                app:layout_constraintTop_toBottomOf="@+id/pollutants2_e3_name" />
 
             <TextView
                 android:id="@+id/pollutants2_e3_val"
@@ -424,7 +398,7 @@
                 android:background="#000000"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@id/pollutants2_e3_name2" />
+                app:layout_constraintTop_toBottomOf="@id/pollutants2_e3_name" />
 
             <TextView
                 android:id="@+id/pollutants2_e4_name"
@@ -436,16 +410,6 @@
                 android:text="@string/pollutants2_e4_name"
                 app:layout_constraintStart_toStartOf="@+id/container_pollutants2"
                 app:layout_constraintTop_toBottomOf="@+id/divisor_7" />
-
-            <TextView
-                android:id="@+id/pollutants2_e4_name2"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="8dp"
-                android:textSize="15sp"
-                android:text="@string/pollutants2_e4_name2"
-                app:layout_constraintStart_toStartOf="@+id/container_pollutants2"
-                app:layout_constraintTop_toBottomOf="@+id/pollutants2_e4_name" />
 
             <TextView
                 android:id="@+id/pollutants2_e4_val"
@@ -468,7 +432,7 @@
                 android:background="#000000"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@id/pollutants2_e4_name2" />
+                app:layout_constraintTop_toBottomOf="@id/pollutants2_e4_name" />
 
             <TextView
                 android:id="@+id/pollutants2_e5_name"
@@ -480,16 +444,6 @@
                 android:text="@string/pollutants2_e5_name"
                 app:layout_constraintStart_toStartOf="@+id/container_pollutants2"
                 app:layout_constraintTop_toBottomOf="@+id/divisor_8" />
-
-            <TextView
-                android:id="@+id/pollutants2_e5_name2"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="8dp"
-                android:textSize="15sp"
-                android:text="@string/pollutants2_e5_name2"
-                app:layout_constraintStart_toStartOf="@+id/container_pollutants2"
-                app:layout_constraintTop_toBottomOf="@+id/pollutants2_e5_name" />
 
             <TextView
                 android:id="@+id/pollutants2_e5_val"
@@ -512,7 +466,7 @@
                 android:background="#000000"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@id/pollutants2_e5_name2" />
+                app:layout_constraintTop_toBottomOf="@id/pollutants2_e5_name" />
 
             <TextView
                 android:id="@+id/pollutants2_e6_name"
@@ -524,16 +478,6 @@
                 android:text="@string/pollutants2_e6_name"
                 app:layout_constraintStart_toStartOf="@+id/container_pollutants2"
                 app:layout_constraintTop_toBottomOf="@+id/divisor_9" />
-
-            <TextView
-                android:id="@+id/pollutants2_e6_name2"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="8dp"
-                android:textSize="15sp"
-                android:text="@string/pollutants2_e6_name2"
-                app:layout_constraintStart_toStartOf="@+id/container_pollutants2"
-                app:layout_constraintTop_toBottomOf="@+id/pollutants2_e6_name" />
 
             <TextView
                 android:id="@+id/pollutants2_e6_val"
@@ -556,7 +500,7 @@
                 android:background="#000000"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@id/pollutants2_e6_name2" />
+                app:layout_constraintTop_toBottomOf="@id/pollutants2_e6_name" />
 
             <TextView
                 android:id="@+id/pollutants2_e7_name"
@@ -568,16 +512,6 @@
                 android:text="@string/pollutants2_e6_name"
                 app:layout_constraintStart_toStartOf="@+id/container_pollutants2"
                 app:layout_constraintTop_toBottomOf="@+id/divisor_10" />
-
-            <TextView
-                android:id="@+id/pollutants2_e7_name2"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="8dp"
-                android:textSize="15sp"
-                android:text="@string/pollutants2_e7_name2"
-                app:layout_constraintStart_toStartOf="@+id/container_pollutants2"
-                app:layout_constraintTop_toBottomOf="@+id/pollutants2_e7_name" />
 
             <TextView
                 android:id="@+id/pollutants2_e7_val"

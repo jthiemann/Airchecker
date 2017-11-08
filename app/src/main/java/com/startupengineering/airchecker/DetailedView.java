@@ -41,16 +41,16 @@ public class DetailedView extends AppCompatActivity {
         pollutants1_e5_value.setText(df.format(poldata.getOzon()));
 
         TextView pollutants2_e1_value = (TextView) findViewById(R.id.pollutants2_e1_val);
-        pollutants2_e1_value.setText(df.format(poldata.getAllergy_1()));
+        pollutants2_e1_value.setText(df.format(poldata.getGraeser()));
 
         TextView pollutants2_e2_value = (TextView) findViewById(R.id.pollutants2_e2_val);
-        pollutants2_e2_value.setText(df.format(poldata.getAllergy_2()));
+        pollutants2_e2_value.setText(df.format(poldata.getEsche()));
 
         TextView pollutants2_e3_value = (TextView) findViewById(R.id.pollutants2_e3_val);
-        pollutants2_e3_value.setText(df.format(poldata.getAllergy_3()));
+        pollutants2_e3_value.setText(df.format(poldata.getBuche()));
 
         TextView pollutants2_e4_value = (TextView) findViewById(R.id.pollutants2_e4_val);
-        pollutants2_e4_value.setText(df.format(poldata.getAllergy_4()));
+        pollutants2_e4_value.setText(df.format(poldata.getBirke()));
 
         TextView pollutants2_e5_value = (TextView) findViewById(R.id.pollutants2_e5_val);
         pollutants2_e5_value.setText(df.format(poldata.getAllergy_5()));
