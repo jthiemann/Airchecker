@@ -47,7 +47,7 @@ public class polData {
         int minutes = refreshDate.getMinutes();
         int seconds = refreshDate.getSeconds();
 
-        return Integer.toString(hours) + ":" + Integer.toString(minutes) + ":" + Integer.toString(seconds);
+        return Integer.toString(hours) + ":" + Integer.toString(minutes);
     }
 
     public void refreshData() {
