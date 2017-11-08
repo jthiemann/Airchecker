@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.startupengineering.airchecker.DetailedView">
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@color/background">
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/last_refresh"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="2dp"
+                android:text="@string/last_refresh"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/last_refresh_val"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="2dp"
+                android:text="@string/last_refresh_timestamp"
+                app:layout_constraintStart_toEndOf="@+id/last_refresh"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:id="@+id/container_pollutants1"
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="30dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@color/background_containers" />
+
+            <TextView
+                android:id="@+id/pollutants1_headline"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:text="@string/pollutants1_headline"
+                app:layout_constraintStart_toStartOf="@+id/container_pollutants1"
+                app:layout_constraintTop_toTopOf="@+id/container_pollutants1" />
+
+            <TextView
+                android:id="@+id/pollutants1_e1_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="15dp"
+                android:text="@string/pollutants1_e1_name"
+                app:layout_constraintStart_toStartOf="@+id/container_pollutants1"
+                app:layout_constraintTop_toBottomOf="@+id/pollutants1_headline" />
+
+            <TextView
+                android:id="@+id/pollutants1_e1_name2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:text="@string/pollutants1_e1_name2"
+                app:layout_constraintStart_toStartOf="@+id/container_pollutants1"
+                app:layout_constraintTop_toBottomOf="@+id/pollutants1_e1_name" />
+
+            <View
+                android:id="@+id/divisor_1"
+                android:layout_width="wrap_content"
+                android:layout_height="1dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp"
+                android:background="#000000"
+                app:layout_constraintStart_toStartOf="@+id/container_pollutants1"
+                app:layout_constraintEnd_toEndOf="@+id/container_pollutants1"
+                app:layout_constraintTop_toBottomOf="@id/pollutants1_e1_name2" />
+
+            <TextView
+                android:id="@+id/pollutants1_e1_val"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="150dp"
+                android:layout_marginTop="15dp"
+                android:text="@string/pollutants1_e1_value"
+                app:layout_constraintStart_toStartOf="@+id/container_pollutants1"
+                app:layout_constraintTop_toBottomOf="@+id/pollutants1_headline" />
+
+            <TextView
+                android:id="@+id/pollutants1_e2_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:text="@string/pollutants1_e2_name"
+                app:layout_constraintStart_toStartOf="@+id/container_pollutants1"
+                app:layout_constraintTop_toBottomOf="@+id/pollutants1_e1_name2" />
+
+            <TextView
+                android:id="@+id/pollutants1_e2_name2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:text="@string/pollutants1_e2_name2"
+                app:layout_constraintStart_toStartOf="@+id/container_pollutants1"
+                app:layout_constraintTop_toBottomOf="@+id/pollutants1_e2_name" />
+
+            <TextView
+                android:id="@+id/pollutants1_e2_val"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="150dp"
+                android:layout_marginTop="8dp"
+                android:text="@string/pollutants1_e2_value"
+                app:layout_constraintStart_toStartOf="@+id/container_pollutants1"
+                app:layout_constraintTop_toBottomOf="@+id/pollutants1_e1_name2" />
+
+            <TextView
+                android:id="@+id/pollutants1_e3_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:text="@string/pollutants1_e3_name"
+                app:layout_constraintStart_toStartOf="@+id/container_pollutants1"
+                app:layout_constraintTop_toBottomOf="@+id/pollutants1_e2_name2" />
+
+            <TextView
+                android:id="@+id/pollutants1_e3_name2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:text="@string/pollutants1_e3_name2"
+                app:layout_constraintStart_toStartOf="@+id/container_pollutants1"
+                app:layout_constraintTop_toBottomOf="@+id/pollutants1_e3_name" />
+
+            <TextView
+                android:id="@+id/pollutants1_e3_val"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="150dp"
+                android:layout_marginTop="8dp"
+                android:text="@string/pollutants1_e3_value"
+                app:layout_constraintStart_toStartOf="@+id/container_pollutants1"
+                app:layout_constraintTop_toBottomOf="@+id/pollutants1_e2_name2" />
+
+            <TextView
+                android:id="@+id/pollutants1_e4_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:text="@string/pollutants1_e4_name"
+                app:layout_constraintStart_toStartOf="@+id/container_pollutants1"
+                app:layout_constraintTop_toBottomOf="@+id/pollutants1_e3_name2" />
+
+            <TextView
+                android:id="@+id/pollutants1_e4_name2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:text="@string/pollutants1_e4_name2"
+                app:layout_constraintStart_toStartOf="@+id/container_pollutants1"
+                app:layout_constraintTop_toBottomOf="@+id/pollutants1_e4_name" />
+
+            <TextView
+                android:id="@+id/pollutants1_e4_val"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="150dp"
+                android:layout_marginTop="8dp"
+                android:text="@string/pollutants1_e4_value"
+                app:layout_constraintStart_toStartOf="@+id/container_pollutants1"
+                app:layout_constraintTop_toBottomOf="@+id/pollutants1_e3_name2" />
+
+            <TextView
+                android:id="@+id/pollutants1_e5_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:text="@string/pollutants1_e5_name"
+                app:layout_constraintStart_toStartOf="@+id/container_pollutants1"
+                app:layout_constraintTop_toBottomOf="@+id/pollutants1_e4_name2" />
+
+            <TextView
+                android:id="@+id/pollutants1_e5_name2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:text="@string/pollutants1_e5_name2"
+                app:layout_constraintStart_toStartOf="@+id/container_pollutants1"
+                app:layout_constraintTop_toBottomOf="@+id/pollutants1_e5_name" />
+
+            <TextView
+                android:id="@+id/pollutants1_e5_val"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="150dp"
+                android:layout_marginTop="8dp"
+                android:text="@string/pollutants1_e5_value"
+                app:layout_constraintStart_toStartOf="@+id/container_pollutants1"
+                app:layout_constraintTop_toBottomOf="@+id/pollutants1_e4_name2" />
+
+        </android.support.constraint.ConstraintLayout>
+    </ScrollView>
+</RelativeLayout>
+
