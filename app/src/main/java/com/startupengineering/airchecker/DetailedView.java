@@ -6,6 +6,9 @@ import android.widget.TextView;
 
 import com.startupengineering.airchecker.polData;
 
+import java.math.RoundingMode;
+import java.text.DecimalFormat;
+
 public class DetailedView extends AppCompatActivity {
 
     @Override
@@ -16,22 +19,46 @@ public class DetailedView extends AppCompatActivity {
         polData poldata = new polData();
         poldata.refreshData();
 
+        DecimalFormat df = new DecimalFormat("#.#");
+        df.setRoundingMode(RoundingMode.CEILING);
+
         TextView refresh_time = (TextView) findViewById(R.id.last_refresh_val);
         refresh_time.setText(poldata.getLastRefreshDate().toString());
 
         TextView pollutants1_e1_value = (TextView) findViewById(R.id.pollutants1_e1_val);
-        pollutants1_e1_value.setText(Float.toString(poldata.getStickstoffmonoxid()));
+        pollutants1_e1_value.setText(df.format(poldata.getStickstoffmonoxid()));
 
         TextView pollutants1_e2_value = (TextView) findViewById(R.id.pollutants1_e2_val);
-        pollutants1_e2_value.setText(Float.toString(poldata.getFeinstaub()));
+        pollutants1_e2_value.setText(df.format(poldata.getFeinstaub()));
 
         TextView pollutants1_e3_value = (TextView) findViewById(R.id.pollutants1_e3_val);
-        pollutants1_e3_value.setText(Float.toString(poldata.getStickstoffdioxid()));
+        pollutants1_e3_value.setText(df.format(poldata.getStickstoffdioxid()));
 
         TextView pollutants1_e4_value = (TextView) findViewById(R.id.pollutants1_e4_val);
-        pollutants1_e4_value.setText(Float.toString(poldata.getSchwefeldioxid()));
+        pollutants1_e4_value.setText(df.format(poldata.getSchwefeldioxid()));
 
         TextView pollutants1_e5_value = (TextView) findViewById(R.id.pollutants1_e5_val);
-        pollutants1_e5_value.setText(Float.toString(poldata.getOzon()));
+        pollutants1_e5_value.setText(df.format(poldata.getOzon()));
+
+        TextView pollutants2_e1_value = (TextView) findViewById(R.id.pollutants2_e1_val);
+        pollutants2_e1_value.setText(df.format(poldata.getAllergy_1()));
+
+        TextView pollutants2_e2_value = (TextView) findViewById(R.id.pollutants2_e2_val);
+        pollutants2_e2_value.setText(df.format(poldata.getAllergy_2()));
+
+        TextView pollutants2_e3_value = (TextView) findViewById(R.id.pollutants2_e3_val);
+        pollutants2_e3_value.setText(df.format(poldata.getAllergy_3()));
+
+        TextView pollutants2_e4_value = (TextView) findViewById(R.id.pollutants2_e4_val);
+        pollutants2_e4_value.setText(df.format(poldata.getAllergy_4()));
+
+        TextView pollutants2_e5_value = (TextView) findViewById(R.id.pollutants2_e5_val);
+        pollutants2_e5_value.setText(df.format(poldata.getAllergy_5()));
+
+        TextView pollutants2_e6_value = (TextView) findViewById(R.id.pollutants2_e6_val);
+        pollutants2_e6_value.setText(df.format(poldata.getAllergy_6()));
+
+        TextView pollutants2_e7_value = (TextView) findViewById(R.id.pollutants2_e7_val);
+        pollutants2_e7_value.setText(df.format(poldata.getAllergy_7()));
     }
 }

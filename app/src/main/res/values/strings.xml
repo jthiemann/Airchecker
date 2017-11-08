@@ -25,4 +25,35 @@
     <string name="pollutants1_e5_name2">O3</string>
     <string name="pollutants1_e5_value">*value*</string>
 
+
+    <string name="pollutants2_headline">Pollen</string>
+
+    <string name="pollutants2_e1_name">filler</string>
+    <string name="pollutants2_e1_name2">filler</string>
+    <string name="pollutants2_e1_value">*value*</string>
+
+    <string name="pollutants2_e2_name">filler:</string>
+    <string name="pollutants2_e2_name2">filler</string>
+    <string name="pollutants2_e2_value">*value*</string>
+
+    <string name="pollutants2_e3_name">filler</string>
+    <string name="pollutants2_e3_name2">filler</string>
+    <string name="pollutants2_e3_value">*value*</string>
+
+    <string name="pollutants2_e4_name">filler</string>
+    <string name="pollutants2_e4_name2">filler</string>
+    <string name="pollutants2_e4_value">*value*</string>
+
+    <string name="pollutants2_e5_name">filler</string>
+    <string name="pollutants2_e5_name2">filler</string>
+    <string name="pollutants2_e5_value">*value*</string>
+
+    <string name="pollutants2_e6_name">filler</string>
+    <string name="pollutants2_e6_name2">filler</string>
+    <string name="pollutants2_e6_value">*value*</string>
+
+    <string name="pollutants2_e7_name">filler</string>
+    <string name="pollutants2_e7_name2">filler</string>
+    <string name="pollutants2_e7_value">*value*</string>
+
 </resources>
