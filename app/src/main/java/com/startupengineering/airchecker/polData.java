@@ -18,13 +18,14 @@ public class polData {
     private float ozon_value;
 
     //TODO: Replace filler variables
-    private float graeser_value;
+    private float hasel_value;
     private float esche_value;
-    private float buche_value;
+    private float erle_value;
     private float birke_value;
-    private float allergy_5;
-    private float allergy_6;
-    private float allergy_7;
+    private float suesgraeser_value;
+    private float roggen_value;
+    private float beifuss_value;
+    private float ambrosia_value;
 
     private long last_refresh;
 
@@ -46,14 +47,14 @@ public class polData {
 
     public float getOzon() { return ozon_value; }
 
-    //TODO: Replace filler variables
-    public float getGraeser() { return graeser_value; }
+    public float getHasel() { return hasel_value; }
     public float getEsche() { return esche_value; }
-    public float getBuche() { return buche_value; }
+    public float getErle() { return erle_value; }
     public float getBirke() { return birke_value; }
-    public float getAllergy_5() { return allergy_5; }
-    public float getAllergy_6() { return allergy_6; }
-    public float getAllergy_7() { return allergy_7; }
+    public float getSuesgraeser() { return suesgraeser_value; }
+    public float getRoggen() { return roggen_value; }
+    public float getBeifuss() { return beifuss_value; }
+    public float getAmbrosia() { return ambrosia_value; }
 
     //TODO: add allergy values
     //TODO: add geters for allergy values
@@ -81,13 +82,14 @@ public class polData {
         ozon_value = r.nextFloat() * 10;
 
         //TODO: Replace filler variables
-        graeser_value = r.nextFloat() * 10;
+        hasel_value = r.nextFloat() * 10;
         esche_value = r.nextFloat() * 10;
-        buche_value = r.nextFloat() * 10;
+        erle_value = r.nextFloat() * 10;
         birke_value = r.nextFloat() * 10;
-        allergy_5 = r.nextFloat() * 10;
-        allergy_6 = r.nextFloat() * 10;
-        allergy_7 = r.nextFloat() * 10;
+        suesgraeser_value = r.nextFloat() * 10;
+        roggen_value = r.nextFloat() * 10;
+        beifuss_value = r.nextFloat() * 10;
+        ambrosia_value = r.nextFloat() * 10;
 
         last_refresh = System.currentTimeMillis();
     }

@@ -1,5 +1,7 @@
 <resources>
     <string name="app_name">Airchecker</string>
+    <string name="settings">Einstellungen</string>
+
     <string name="last_refresh">Letzte Aktualisierung am:</string>
     <string name="last_refresh_timestamp">timestamp</string>
 
@@ -26,27 +28,31 @@
     <string name="pollutants1_e5_value">*value*</string>
 
 
-    <string name="pollutants2_headline">Pollen</string>
+    <string name="pollutants2_headline">Pollenarten</string>
 
-    <string name="pollutants2_e1_name">Gräser</string>
+    <string name="pollutants2_e1_name">Hasel</string>
     <string name="pollutants2_e1_value">*value*</string>
 
     <string name="pollutants2_e2_name">Esche</string>
     <string name="pollutants2_e2_value">*value*</string>
 
-    <string name="pollutants2_e3_name">Buche</string>
+    <string name="pollutants2_e3_name">Erle</string>
     <string name="pollutants2_e3_value">*value*</string>
 
     <string name="pollutants2_e4_name">Birke</string>
     <string name="pollutants2_e4_value">*value*</string>
 
-    <string name="pollutants2_e5_name">filler</string>
+    <string name="pollutants2_e5_name">Süßgräser</string>
     <string name="pollutants2_e5_value">*value*</string>
 
-    <string name="pollutants2_e6_name">filler</string>
+    <string name="pollutants2_e6_name">Roggen</string>
     <string name="pollutants2_e6_value">*value*</string>
 
-    <string name="pollutants2_e7_name">filler</string>
+    <string name="pollutants2_e7_name">Beifuss</string>
     <string name="pollutants2_e7_value">*value*</string>
+
+    <string name="pollutants2_e8_name">Ambrosia</string>
+    <string name="pollutants2_e8_value">*value*</string>
+
 
 </resources>
